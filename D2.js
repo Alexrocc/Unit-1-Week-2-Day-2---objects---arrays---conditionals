@@ -105,16 +105,17 @@
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 // const shoppingCart = prompt("Type your shopping cart value.")
-// let totalShoppingCart = (parseInt(shoppingCart) * 80) / 100
+// let totalShoppingCart = parseInt(shoppingCart)
+// let blackFridayShoppingCart = (totalShoppingCart * 80) / 100
 
-// if (totalShoppingCart <= 50){
-//   totalShoppingCart = totalShoppingCart + 10
-//   console.log("It's Black Friday! With 20% promotion discount, your total is: ", totalShoppingCart + " because of 10 euros of shipping costs." )
+// if (blackFridayShoppingCart <= 50){
+//   blackFridayShoppingCart = blackFridayShoppingCart + 10
+//   console.log("It's Black Friday! With 20% promotion discount, your total is: ", blackFridayShoppingCart + " because of 10 euros of shipping costs." )
 // } else {
-//   console.log("It's Black Friday! With 20% promotion discount, your total is: ", totalShoppingCart + " and your shipping is free!")
+//   console.log("It's Black Friday! With 20% promotion discount, your total is: ", blackFridayShoppingCart + " and your shipping is free!")
 // }
 
-//needs adjustments, currently does not work as intended
+
 
 /* ESERCIZIO 7
 Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -197,6 +198,7 @@ me.city = 'Toronto'
 
 delete me.lastName
 
+
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
@@ -204,7 +206,7 @@ delete me.lastName
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 me.skills.pop();
-
+console.log(me, me.skills)
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
